@@ -73,6 +73,7 @@ text-decoration: none;
 /* row-gap: 50px;  */
 }
 @keyframes loading {
+
   0%{
     transform: rotate(0deg);
   }
