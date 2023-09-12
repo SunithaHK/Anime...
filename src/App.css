@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+nav{
+  height:80px ;
+  width:100%;
+  background :linear-gradient(3deg,rgb(11, 36, 23),rgb(17, 53, 153));
+ display: flex;
+ align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  margin-left: 10px;
+ margin-top: 10px ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search{
+  margin-left: 250px;
+}
+.anime{
+  margin-left:200px ;
+  font-size:x-large;
+  text-decoration: none;
+  margin-top:8px ;
+  color:white;
+}
+.logo img{
+  
+  width:70px ;
+}
+.search input{
+  height: 40px;
+  width:400px ;
+ margin-top:15px ;
+  background-color:rgb(169, 140, 140);
+}
+.search button{
+  height: 40px;
+  background-color:rgb(169, 140, 140);
+}
+.loder {
+ width: 150px; 
+ height:150px ;
+ border-radius: 50%;
+ border-right:4px dotted rgb(224, 198, 198) ;
+ border-top: 4px solid rgb(75, 234, 221);
+ 
+ animation-duration: 5s;
+ margin-top: 200px;
+ margin-left: 600px;
+ align-items: center;
+ animation-name: rotate;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees for one full rotation */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.movie{
+  /* display:grid;
+  grid-template-columns:400px 400px 400px; */
+  background:linear-gradient( rgb(136, 181, 230),rgb(20, 154, 74)) ;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+/* column-gap:100px ; */
+text-decoration: none;
+/* row-gap: 50px;  */
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes loading {
+  0%{
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  100%{transform: rotate(360deg);}
 }
+.template{
+  border-color: black;
+  border-width:3px ;
+  border-style:ridge;
+  background: linear-gradient(30deg,rgb(9, 18, 73),rgb(2,33,3));
+  width: 350px; 
+  margin-top:20px ;
+  border-radius:10px ;
+  font-size: x-small;
+  height:450px;
+  padding:10px ;
+  margin-left:100px; 
+}
+.template img{
+  height: 250px; ;
+  width: 350px;
+}
+.template a{
+  text-decoration: none;
+  color:white;
+}
+.details{
+  border-color: rgb(6, 36, 21);
+  border-style: double;
+  border-width: 5px;
+  width:400px;
+  font-size :6px;;
+  height:450px ;
+  margin-top:10px ;
+  margin-left: 500px ;
+  padding-bottom:5px ;
+  padding-left:5px ;
+}
+.details img{
+  height:100px ;
+
+}
+button{
+  width:100px ;
+ 
+}
+@media(max-width: 768px)
+{
+ nav{
+ width: 1200px;
+ }
+ .movie{
+  width: 1200px;
+  height:100%;
+ }
+ button{
+  width:100px ;
+ 
+}
+.loder {
+  width: 150px; 
+ height:150px ;
+}
+.search input{
+  height: 40px;
+  width:400px ;
+ margin-top:15px ;
+  background-color:rgb(169, 140, 140);
+}
+.search button{
+  height: 40px;
+  background-color:rgb(169, 140, 140);
+}
+}
+  
