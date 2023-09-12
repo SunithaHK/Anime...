@@ -120,7 +120,7 @@ button{
   width:100px ;
  
 }
-@media(max-width: 768px)
+@media(max-width: 1280px)
 {
  nav{
  width: 1200px;
@@ -148,4 +148,7 @@ button{
   background-color:rgb(169, 140, 140);
 }
 }
+
+
+
   
